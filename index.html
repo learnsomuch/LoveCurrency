@@ -40,7 +40,15 @@
               <div class="alert alert-success" role="alert">
                 <h4 class="alert-heading">Love currency!</h4>
                 <p>Aww yeah, Thank you for choosing our application. If you have any questions or feedback, please email us to sankar@learnsomuch.com </p>
-                </div>
+              </div>
+
+              <div class="alert alert-info" role="alert">
+                  <h4 class="alert-heading">Information!</h4>
+                  <strong>For example,</strong> Enter <strong>EUR</strong> in <strong>Currency From</strong> and <strong>INR</strong> in <strong>Currency To</strong> in input field below and click on <strong>Convert</strong> button.<br/>
+                  <i class="up">▲ - indicates rise</i><br/>
+                  <i class="down">▼ - indicates down</i><br/>
+                  <i class="noChange">◼︎ - indicates no change</i><br/>
+              </div>
 
               <div class="container">
                 <form>
@@ -48,20 +56,20 @@
                  <div class="col-sm-6">
                    <div class="form-group">
                       <label for="exampleInputEmail1">Currency From </label>
-                      <input type="text" ng-model="from" class="form-control" id="from" aria-describedby="textHelp" placeholder="Enter country">
+                      <input type="text" ng-model="from" class="form-control" id="from" aria-describedby="textHelp" placeholder="Enter country currency code">
                       <small id="textHelp" class="form-text text-muted">Please enter the country you want to convert from. </small>
                   </div>
                  </div>
                  <div class="col-sm-6">
                    <div class="form-group">
                       <label for="exampleInputEmail1">Currency To </label>
-                      <input type="text" class="form-control" id="to" aria-describedby="textHelp" placeholder="Enter country">
+                      <input type="text" class="form-control" id="to" aria-describedby="textHelp" placeholder="Enter country currency code">
                       <small id="textHelp" class="form-text text-muted">Please enter the country you want to convert to .</small>
                   </div>
                  </div>
                </div>
                <div class="row">
-                 <button type="button" class="btn btn-success">Convert</button>
+                 <button type="button" class="btn btn-success btn-lg" onclick="convert()"><i class="fa fa-money" aria-hidden="true"></i> Convert</button>
                </div>
              </form>
               </div>
