@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "request": "^2.76.0"
+  },
+  "devDependencies": {
+    "electron": "^1.4.5"
   }
 }
