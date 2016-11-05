@@ -11,3 +11,10 @@
   .main {
     align-content: center;
   }
+  .icon-heart {
+    color: red;
+  }
+  .hidden {
+    display: none !important;
+    visibility: hidden !important;
+  }

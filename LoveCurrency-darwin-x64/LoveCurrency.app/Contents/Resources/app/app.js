@@ -1,3 +1,14 @@
+/* Jquery for shortcut buttons about help and info with bootstrap alert messages */
+$(".showhelp").on("click", function() {
+    //$(".alert").removeClass("in").show();
+	  $(".showhelpalert").delay(200).addClass("in");
+});
+$(".showinfo").on("click", function() {
+    //$(".alert").removeClass("in").show();
+	  $(".showinfoalert").delay(200).addClass("in");
+});
+
+/* Convert function based on user input */
 function convert() {
 
   var fromcurrency = document.getElementById('from').value;
@@ -16,6 +27,7 @@ function convert() {
 
   }, 1800);
 
+  /* Request new Rate and update up, down or nochange status */
   var lastPrice;
   function newRate(content) {
     currentRate = content.query.results.rate.Rate;
