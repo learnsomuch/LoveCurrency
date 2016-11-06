@@ -1,8 +1,10 @@
 # LoveCurrency
+![Alt text](/media/logo.png?raw=true "Desktop LoveCurrency Mac application")
+
 Realtime currency convertor desktop application
 
 ## Status
-Development.
+[Version 0.0.1-beta.1]
 
 ## Installation
 Make sure you installed node.js and electron.
@@ -14,7 +16,9 @@ then, use `npm start` to start the application.
 ## How to build 
 I have updated the build settings for Mac in package.json with build.
 
-you have to use `npm run build` to build the application in Mac. (Tested in MacOS Sierra. Version : 10.12.1)
+you have to use `npm run build-mac` to build the application in Mac. (Tested in MacOS Sierra. Version : 10.12.1)
+
+There is possibility to create build for Windows using `npm run build-win`. But haven't tested.
 
 Latest stable build app is stored in [LoveCurrency.app](https://github.com/learnsomuch/LoveCurrency/tree/master/LoveCurrency-darwin-x64)
 
