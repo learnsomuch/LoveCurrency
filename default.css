@@ -1,0 +1,50 @@
+/*!
+ * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+html,body {
+  height: 100%;
+  margin: 0;
+}
+.jumbotron {
+  background-color: #b71c1c;
+  padding: 50px 0;
+  height: 700px;
+  min-height: 700px;
+}
+.jumboheight {
+  min-height: 600px;
+}
+
+.padding-jumbo {
+  padding-top: 35px;
+}
+
+.white-text {
+  color: white;
+}
+.fa-heart {
+  color: #b71c1c;
+}
+.second-container {
+  background-color: white;
+  height: 200px;
+}
+.third-container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #b71c1c;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
