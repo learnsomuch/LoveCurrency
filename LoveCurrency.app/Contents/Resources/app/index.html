@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Love currency</title>
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/photon.min.css">
+    <link rel="stylesheet" href="assets/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/custom.css">
+
+    </head>
+
+    <body style="-webkit-app-region: drag">
+      <div class="window">
+
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Sidebar menu</h5>
+              <span class="nav-group-item active">
+                <span class="icon icon-home"></span>
+                Home
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-star"></span>
+                Favorites
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-download"></span>
+                Download
+              </span>
+            </nav>
+          </div>
+          <div class="pane">
+
+
+            <header class="toolbar toolbar-header">
+              <center>
+                <h4 class="navbar"><img src="media/logo.png" width="50px" height="50px"> Currency</h4>
+              </center>
+                <div class="toolbar-actions" align="right">
+                  <div class="btn-group">
+                    <button class="btn btn-default active">
+                      <span class="icon icon-home"></span>
+                    </button>
+                    <button class="btn btn-default">
+                      <span class="icon icon-star"></span>
+                    </button>
+                    <button class="btn btn-default">
+                      <span class="icon icon-download"></span>
+                    </button>
+                    <button class="btn btn-default showinfo">
+                      <span class="icon icon-info-circled"></span>
+                    </button>
+                    <button class="btn btn-default showhelp">
+                      <span class="icon icon-help-circled"></span>
+                    </button>
+                  </div>
+                </div>
+            </header>
+
+            <center>
+
+
+              <div class="container">
+                <br/><br/>
+                <form>
+                <div class="row">
+                 <div class="col-sm-6">
+                   <div class="form-group">
+                      <label for="exampleInputEmail1">Currency From </label>
+                      <input type="text" ng-model="from" class="form-control" id="from" aria-describedby="textHelp" placeholder="Enter country currency code">
+                      <small id="textHelp" class="form-text text-muted">Please enter the country you want to convert from. </small>
+                  </div>
+                 </div>
+                 <div class="col-sm-6">
+                   <div class="form-group">
+                      <label for="exampleInputEmail1">Currency To </label>
+                      <input type="text" class="form-control" id="to" aria-describedby="textHelp" placeholder="Enter country currency code">
+                      <small id="textHelp" class="form-text text-muted">Please enter the country you want to convert to .</small>
+                  </div>
+                 </div>
+               </div>
+               <div class="row">
+                 <button type="button" class="btn btn-success btn-lg" onclick="convert()"><i class="fa fa-money" aria-hidden="true"></i> Convert</button>
+               </div>
+             </form>
+              </div>
+
+              <h2 id="currency"></h2>
+              <h3 id="currencyrate"></h3>
+
+              <h3 id="company"></h3>
+              <div class="the-price" id="price"></div>
+              <div class="up-down" id="priceHistory"></div>
+              <br/>
+              <div class="alert alert-success fade showhelpalert" id="demo" role="alert">
+                <button type="button" class="close" data-dismiss="alert">
+                  <span>&times;</span>
+                </button>
+                  <p>Aww yeah, Thank you for choosing our application. If you have any questions or feedback, please email us to sankar@learnsomuch.com </p>
+              </div>
+
+              <div class="alert alert-info alert-dismissible fade showinfoalert" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                  <h4 class="alert-heading">Information!</h4>
+                  <strong>For example,</strong> Enter <strong>EUR</strong> in <strong>Currency From</strong> and <strong>INR</strong> in <strong>Currency To</strong> in input field below and click on <strong>Convert</strong> button.<br/>
+                  <i class="up">▲ - indicates rise</i><br/>
+                  <i class="down">▼ - indicates down</i><br/>
+                  <i class="noChange">◼︎ - indicates no change or market closed with indicated price</i><br/>
+              </div>
+
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <script src="assets/jquery-3.1.1.min.js"></script>
+      <script src="assets/tether.min.js"></script>
+      <script src="assets/jquery-2.2.4.min.js"></script>
+      <script src="assets/bootstrap.min.js"></script>
+      <script src="lovecurrency.js"></script>
+
+    </body>
+</html>
