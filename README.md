@@ -4,7 +4,7 @@
 Realtime currency convertor desktop application
 
 ## Status
-[Version 0.0.1-beta.1]
+[Version 0.0.1-beta.1](https://github.com/learnsomuch/LoveCurrency/releases)
 
 ## Installation
 Make sure you installed node.js and electron.
