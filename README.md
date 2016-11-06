@@ -28,11 +28,9 @@ If you like this project, I would be greatful if you can contribute.
 You can email me to sankar@learnsomuch.com for more information.
 
 ### Todos
-* Support all currencies
-* Use angular or anyother to have realtime change in input field
 * Add option to have favourite currencies
 * should have ability to download currency status in PDF
-* optimise code
+* Take screenshot
 
 ### License
 Look for License file in source code.
